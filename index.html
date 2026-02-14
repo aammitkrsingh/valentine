@@ -14,7 +14,7 @@
         <section id="hero" class="section">
             <div class="glass-card">
                 <h1>Happy Valentine’s Day ❤️</h1>
-                <p>You are my today and all of my tomorrows.</p>
+                <p class="sub-text">You are my today and all of my tomorrows.</p>
             </div>
         </section>
 
@@ -31,7 +31,7 @@
 
         <section id="proposal" class="section">
             <div class="glass-card">
-                <h2>Will You Be Mine Forever?</h2>
+                <h2>Will You Be Mine Forever? I Bet you Click "No"!😏</h2>
                 <div class="btn-group">
                     <button id="yes-btn" onclick="showRiddle()">Yes ❤️</button>
                     <button id="no-btn">No 😏</button>
@@ -43,14 +43,14 @@
             <div class="glass-card">
                 <p class="riddle-text">"I can be given, but never bought. I can be shared, but never divided. I grow when I am given away. What am I?"</p>
                 <input type="text" id="riddle-input" placeholder="Your answer...">
-                <button onclick="checkRiddle()">Unlock My Heart</button>
+                <button id="unlock-btn" onclick="checkRiddle()">Unlock My Heart</button>
                 <p id="riddle-hint"></p>
             </div>
         </section>
     </main>
 
     <div id="video-overlay" class="hidden">
-        <video id="final-video" src="final.MP4" autoplay muted playsinline preload="auto"></video>
+        <video id="final-video" src="final.MP4" playsinline preload="auto"></video>
     </div>
 
     <div id="final-message" class="hidden">
