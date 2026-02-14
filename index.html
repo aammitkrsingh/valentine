@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Valentine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="heartCanvas"></canvas>
+
+    <main id="main-content">
+        <section id="hero" class="section">
+            <div class="glass-card">
+                <h1>Happy Valentine’s Day ❤️</h1>
+                <p>You are my today and all of my tomorrows.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="photo-grid">
+                <div class="photo-card"><img src="couple1.jpg" alt="Memory 1"><p>The beginning...</p></div>
+                <div class="photo-card"><img src="couple2.jpg" alt="Memory 2"><p>Pure joy.</p></div>
+                <div class="photo-card"><img src="couple3.jpg" alt="Memory 3"><p>Our favorite spot.</p></div>
+                <div class="photo-card"><img src="couple4.jpg" alt="Memory 4"><p>Laughing forever.</p></div>
+                <div class="photo-card"><img src="couple5.jpg" alt="Memory 5"><p>Adventure awaits.</p></div>
+                <div class="photo-card"><img src="couple6.jpg" alt="Memory 6"><p>Always you.</p></div>
+            </div>
+        </section>
+
+        <section id="proposal" class="section">
+            <div class="glass-card">
+                <h2>Will You Be Mine Forever?</h2>
+                <div class="btn-group">
+                    <button id="yes-btn" onclick="showRiddle()">Yes ❤️</button>
+                    <button id="no-btn">No 😏</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="riddle-gate" class="section hidden">
+            <div class="glass-card">
+                <p class="riddle-text">"I beat without a heart. I speak without a mouth. I exist only when we are together. What am I?"</p>
+                <input type="text" id="riddle-input" placeholder="Your answer...">
+                <button onclick="checkRiddle()">Unlock My Heart</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="video-overlay" class="hidden">
+        <video id="final-video" src="final.mp4"></video>
+    </div>
+
+    <div id="final-message" class="hidden">
+        <h1>I LOVE YOU</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
