@@ -1,4 +1,4 @@
-// 1. Background Pixel Hearts Canvas
+// 1. Background Animation
 const canvas = document.getElementById('heartCanvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -13,7 +13,6 @@ const hearts = Array.from({ length: 50 }, () => ({
 
 function drawPixelHeart(x, y, size) {
     ctx.fillStyle = '#7B3F00';
-    // Simplified heart path for performance and "retro" feel
     ctx.beginPath();
     ctx.moveTo(x, y + size / 4);
     ctx.quadraticCurveTo(x, y, x + size / 4, y);
@@ -47,8 +46,10 @@ function escape() {
     noBtn.style.top = `${y}px`;
     if(noCount === 5) alert("Persistence is cute! But 'Yes' is the right answer. 😉");
 }
-noBtn.addEventListener('mouseover', escape);
-noBtn.addEventListener('touchstart', (e) => { e.preventDefault(); escape(); });
+if(noBtn) {
+    noBtn.addEventListener('mouseover', escape);
+    noBtn.addEventListener('touchstart', (e) => { e.preventDefault(); escape(); });
+}
 
 // 3. Riddle Logic
 let wrongAttempts = 0;
@@ -86,7 +87,7 @@ function startFinalSequence() {
     video.onended = () => {
         overlay.classList.add('hidden');
         document.getElementById('final-message').classList.remove('hidden');
-        document.body.style.backgroundColor = #FF0000;
+        document.body.style.backgroundColor = "#FF0000"; // Fixed: Added Quotes
     };
 }
 
