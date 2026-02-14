@@ -75,7 +75,7 @@ function startFinalSequence() {
     video.onended = () => {
         overlay.classList.add('hidden');
         document.getElementById('final-message').classList.remove('hidden');
-        document.body.style.backgroundColor = 'black';
+        document.body.style.backgroundColor = 'red';
     };
 }
 
