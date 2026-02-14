@@ -20,12 +20,12 @@
 
         <section id="gallery" class="section">
             <div class="photo-grid">
-                <div class="photo-card"><img src="couple1.jpg" alt="Memory 1"><p>The beginning...</p></div>
-                <div class="photo-card"><img src="couple2.jpg" alt="Memory 2"><p>Pure joy.</p></div>
-                <div class="photo-card"><img src="couple3.jpg" alt="Memory 3"><p>Our favorite spot.</p></div>
-                <div class="photo-card"><img src="couple4.jpg" alt="Memory 4"><p>Laughing forever.</p></div>
-                <div class="photo-card"><img src="couple5.jpg" alt="Memory 5"><p>Adventure awaits.</p></div>
-                <div class="photo-card"><img src="couple6.jpg" alt="Memory 6"><p>Always you.</p></div>
+                <div class="photo-card"><img src="couple1.jpg" alt="1"><p>The beginning...</p></div>
+                <div class="photo-card"><img src="couple2.jpg" alt="2"><p>Pure joy.</p></div>
+                <div class="photo-card"><img src="couple3.jpg" alt="3"><p>Our favorite spot.</p></div>
+                <div class="photo-card"><img src="couple4.jpg" alt="4"><p>Laughing forever.</p></div>
+                <div class="photo-card"><img src="couple5.jpg" alt="5"><p>Adventure awaits.</p></div>
+                <div class="photo-card"><img src="couple6.jpg" alt="6"><p>Always you.</p></div>
             </div>
         </section>
 
@@ -41,15 +41,16 @@
 
         <section id="riddle-gate" class="section hidden">
             <div class="glass-card">
-                <p class="riddle-text">"I beat without a heart. I speak without a mouth. I exist only when we are together. What am I?"</p>
+                <p class="riddle-text">"I can be given, but never bought. I can be shared, but never divided. I grow when I am given away. What am I?"</p>
                 <input type="text" id="riddle-input" placeholder="Your answer...">
                 <button onclick="checkRiddle()">Unlock My Heart</button>
+                <p id="riddle-hint"></p>
             </div>
         </section>
     </main>
 
     <div id="video-overlay" class="hidden">
-        <video id="final-video" src="final.mp4"></video>
+        <video id="final-video" src="final.mp4" playsinline></video>
     </div>
 
     <div id="final-message" class="hidden">
